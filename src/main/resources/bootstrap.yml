@@ -1,0 +1,20 @@
+# Server
+server:
+  port: 0
+
+# Configure DataSource
+# DataBase SQL Server
+spring:
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=jpa
+    username: sa
+    password: root123.
+    
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2008Dialect
+        
+  application:
+    name: accounts
